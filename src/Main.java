@@ -10,16 +10,14 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		ImplicitTreap treap = new ImplicitTreap();
 
-        /**  Выводим меню  **/
-        do    
-        {
+        // Выводим меню
+        do {
             System.out.println("\nНажмите чтобы:\n");
             System.out.println("1. вставить элемент по ключу и по значению");
             System.out.println("2. удалить элемент по ключу");
  
             int choice = scan.nextInt();            
-            switch (choice)
-            {
+            switch (choice) {
             case 1 : 
                 System.out.println("Введите целое число - ключ");
                 key = scan.nextInt();
@@ -36,7 +34,7 @@ public class Main {
                 System.out.println("Ошибка нажатия \n ");
                 break;   
             }
-            /**  Вывод дерева  **/
+            //  Вывод дерева
 
             System.out.println("Обновленное дерево");
             treap.printTree();
